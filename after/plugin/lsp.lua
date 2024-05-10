@@ -51,12 +51,15 @@ end
 local servers = {
   -- clangd = {},
   -- gopls = {},
-  -- pyright = {},
+  pyright = {
+    python = {
+      analysis = {
+        typeCheckingMode = "off",
+      },
+    }
+  },
   -- rust_analyzer = {},
   -- tsserver = {},
-  ruff_lsp = {
-
-  },
   lua_ls = {
     Lua = {
       workspace = { checkThirdParty = false },

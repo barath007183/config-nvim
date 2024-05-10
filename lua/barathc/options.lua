@@ -5,6 +5,11 @@
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 
+-- Set cursor to always be a block
+vim.o.guicursor = ''
+-- clipboard
+vim.o.clipboard = ""
+
 -- set termguicolors to enable highlight groups
 vim.opt.termguicolors = true
 
@@ -52,3 +57,4 @@ vim.api.nvim_create_autocmd('TextYankPost', {
 
 -- copilot options
 vim.g.copilot_assume_mapped = true
+vim.api.nvim_set_keymap("i", "<C-j>", "copilot#Accept('<CR>')", { expr = true, silent = true })

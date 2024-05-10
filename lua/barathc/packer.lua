@@ -11,6 +11,11 @@ require('packer').startup(function(use)
   -- Package manager
   use 'wbthomason/packer.nvim'
   use 'nvim-tree/nvim-tree.lua'
+  use 'github/copilot.vim'
+  use {
+    'xiantang/darcula-dark.nvim',
+    requires = { "nvim-treesitter/nvim-treesitter" }
+  }
   use { -- LSP Configuration & Plugins
     'neovim/nvim-lspconfig',
     requires = {
